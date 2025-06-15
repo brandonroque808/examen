@@ -1,0 +1,27 @@
+.card {
+  width: 100;
+  display: flex;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  padding: 2rem;
+  margin-bottom: 1rem;
+  gap: 1rem;
+  align-items: center;
+
+;
+}
+.card img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+}
+.card .info {
+  flex: 1;
+}
+.card button {
+  background-color: #7c3aed;
+  color: white;
+  padding: 0.3rem 1rem;
+  border: none;
+  border-radius: 4px;
+}
