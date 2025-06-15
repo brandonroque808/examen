@@ -1,13 +1,17 @@
-import './Modal.css';
+import '../styles/Modal.css';
 
-export default function Modal({ precio, onClose }) {
+function Modal({ onCerrar }) {
   return (
-    <div className="modal-background">
-      <div className="modal-content">
+    <div className="modal-overlay" onClick={onCerrar}>
+      <div className="modal-content" onClick={(e) => e.stopPropagation()}>
         <h3>Precio del Curso</h3>
-        <p>{precio}</p>
-        <button onClick={onClose}>Cerrar</button>
+        <p>Bs. 400</p>
+        <button onClick={onCerrar} className="btn-cerrar">
+          Cerrar
+        </button>
       </div>
     </div>
   );
 }
+
+export default Modal;
