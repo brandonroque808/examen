@@ -2,11 +2,11 @@ import { useState } from 'react';
 import './Inicio.css';
 
 const danzas = [
-  { region: "Altiplano", descripcion: "La morenada, tipica del altiplano", imagen: "img/morenada.jpeg" },
-  { region: "Valles", descripcion: "El cueca, danza romantica y alegre", imagen: "img/cueca.jpeg" },
-  { region: "Chaco", descripcion: "La chacarera chaquena, de ritmos fuertes", imagen: "img/chacarera.jpeg" },
-  { region: "Amazonía", descripcion: "La danza del toborochi, de la selva boliviana", imagen: "img/toborochi.jpeg" },
-  { region: "Llanos", descripcion: "El taquirari, tipico del oriente", imagen: "img/taquirari.jpeg" },
+  { region: "Altiplano", descripcion: "La morenada, tipica del altiplano", imagen: "src/pages/img/morenada.jpeg" },
+  { region: "Valles", descripcion: "El cueca, danza romantica y alegre", imagen: "src/pages/img/cueca.jpeg" },
+  { region: "Chaco", descripcion: "La chacarera chaquena, de ritmos fuertes", imagen: "src/pages/img/chacarera.jpeg" },
+  { region: "Amazonía", descripcion: "La danza del toborochi, de la selva boliviana", imagen: "src/pages/img/toborochi.jpeg" },
+  { region: "Llanos", descripcion: "El taquirari, tipico del oriente", imagen: "src/pages/img/taquirari.jpeg" },
 ];
 
 export default function Inicio() {
