@@ -1,46 +1,46 @@
-.card {
-  width: 100%;
+.card-curso {
   display: flex;
-  border: 1px solid #ccc;
-  border-radius: 6px;
-  padding: 2rem;
-  margin-bottom: 1rem;
-  gap: 1rem;
   align-items: center;
-  background-color: white;
+  gap: 20px;
+  background-color: #3a3a3a;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 20px;
 }
 
-.card img {
+.card-curso img {
   width: 100px;
   height: 100px;
   object-fit: cover;
-  border-radius: 4px;
-  display: block;
+  border-radius: 5px;
 }
 
-.card .info {
+.info-curso {
   flex: 1;
 }
 
-.card .info h3 {
-  color: #333;
-  margin: 0 0 0.5rem 0;
+.info-curso h3 {
+  color: #ccc;
+  margin: 0 0 10px 0;
+  font-size: 18px;
 }
 
-.card .info p {
-  color: #666;
-  margin: 0 0 1rem 0;
+.info-curso p {
+  color: #999;
+  margin: 0 0 15px 0;
+  font-size: 14px;
 }
 
-.card button {
-  background-color: #7c3aed;
+.btn-precio {
+  background-color: #8B5CF6;
   color: white;
-  padding: 0.5rem 1rem;
   border: none;
-  border-radius: 4px;
+  padding: 8px 16px;
+  border-radius: 5px;
   cursor: pointer;
+  font-size: 14px;
 }
 
-.card button:hover {
-  background-color: #6d28d9;
+.btn-precio:hover {
+  background-color: #7C3AED;
 }
