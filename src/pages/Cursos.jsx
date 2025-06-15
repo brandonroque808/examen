@@ -1,29 +1,54 @@
-import { useState } from "react";
-import CardCurso from "../components/CardCurso";
-import Modal from "../components/Modal";
-import './Cursos.css';
+import { useState } from 'react';
+import CardCurso from '../components/CardCurso';
+import Modal from '../components/Modal';
+import '../styles/Cursos.css';
 
 const cursos = [
-  { nombre: "Morenada", descripcion: "Curso completo sobre la danza Morenada.", imagen: "src/pages/img/morenada.jpeg", precio: "Bs. 400" },
-  { nombre: "Diablada", descripcion: "Aprende la cueca tradicional.", imagen: "src/pages/img/diablada.jpeg", precio: "Bs. 400" },
-  { nombre: "Taquirari", descripcion: "Curso de baile oriental Taquirari.", imagen: "src/pages/img/taquirari.jpeg", precio: "Bs. 400" }
+  {
+    nombre: "Morenada",
+    descripcion: "Curso completo sobre la danza Morenada.",
+    imagen: "/images/morenada.jpg"
+  },
+  {
+    nombre: "Diablada",
+    descripcion: "Aprende la cueca tradicional.",
+    imagen: "/images/diablada.jpg"
+  },
+  {
+    nombre: "Taquirari",
+    descripcion: "Curso de baile oriental Taquirari.",
+    imagen: "/images/taquirari.jpg"
+  }
 ];
 
-export default function Cursos() {
-  const [modal, setModal] = useState({ visible: false, precio: "" });
+function Cursos() {
+  const [mostrarModal, setMostrarModal] = useState(false);
 
-  const abrirModal = (precio) => setModal({ visible: true, precio });
-  const cerrarModal = () => setModal({ visible: false, precio: "" });
+  const abrirModal = () => {
+    setMostrarModal(true);
+  };
+
+  const cerrarModal = () => {
+    setMostrarModal(false);
+  };
 
   return (
     <div className="cursos">
       <h2>Oferta de Cursos</h2>
+      
       <div className="lista-cursos">
         {cursos.map((curso, index) => (
-          <CardCurso key={index} curso={curso} onVerPrecio={abrirModal} />
+          <CardCurso 
+            key={index} 
+            curso={curso} 
+            onVerPrecio={abrirModal}
+          />
         ))}
       </div>
-      {modal.visible && <Modal precio={modal.precio} onClose={cerrarModal} />}
+      
+      {mostrarModal && <Modal onCerrar={cerrarModal} />}
     </div>
   );
 }
+
+export default Cursos;
