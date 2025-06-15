@@ -1,0 +1,75 @@
+.inicio {
+  text-align: center;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.inicio h2 {
+  color: #ccc;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.carrusel {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  margin-bottom: 20px;
+}
+
+.btn-carrusel {
+  background-color: #444;
+  color: white;
+  border: none;
+  font-size: 24px;
+  padding: 10px 15px;
+  cursor: pointer;
+  border-radius: 5px;
+}
+
+.btn-carrusel:hover {
+  background-color: #666;
+}
+
+.contenido-carrusel {
+  max-width: 400px;
+}
+
+.contenido-carrusel img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.contenido-carrusel h3 {
+  color: #ccc;
+  font-size: 20px;
+  margin: 10px 0;
+}
+
+.contenido-carrusel p {
+  color: #999;
+  font-size: 14px;
+}
+
+.indicadores {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
+
+.indicador {
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  border: none;
+  background-color: #666;
+  cursor: pointer;
+}
+
+.indicador.activo {
+  background-color: #8B5CF6;
+}
