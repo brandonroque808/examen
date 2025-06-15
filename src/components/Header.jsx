@@ -1,9 +1,11 @@
-import './Header.css';
+import '../styles/Header.css';
 
-export default function Header() {
+function Header() {
   return (
     <header className="header">
-      Academia Sergio el Bailador
+      <h1>Academia Sergio el Bailador</h1>
     </header>
   );
 }
+
+export default Header;
