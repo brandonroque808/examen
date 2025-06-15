@@ -1,7 +1,11 @@
-.footer {
-  background-color: #2a2a2a;
-  color: #ccc;
+.header {
+  background-color: #8B5CF6;
+  color: white;
   text-align: center;
   padding: 20px;
-  border-top: 1px solid #444;
+}
+
+.header h1 {
+  font-size: 24px;
+  font-weight: normal;
 }
