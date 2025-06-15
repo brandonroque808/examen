@@ -1,9 +1,11 @@
-import './Footer.css';
+import '../styles/Footer.css';
 
-export default function Footer() {
+function Footer() {
   return (
     <footer className="footer">
-      © 2025 Sergio el Bailador
+      <p>© 2025 Sergio el Bailador</p>
     </footer>
   );
 }
+
+export default Footer;
