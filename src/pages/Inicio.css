@@ -1,6 +1,7 @@
 .inicio {
   text-align: center;
   padding: 20px;
+  color: #333;
 }
 
 .carrusel {
@@ -39,6 +40,7 @@
   object-fit: cover;
   border-radius: 10px;
   margin-bottom: 15px;
+  display: block;
 }
 
 .info-danza h3 {
