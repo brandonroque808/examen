@@ -1,0 +1,46 @@
+.card-curso {
+  display: flex;
+  align-items: center;
+  gap: 20px;
+  background-color: #3a3a3a;
+  border: 1px solid #555;
+  border-radius: 8px;
+  padding: 20px;
+}
+
+.card-curso img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.info-curso {
+  flex: 1;
+}
+
+.info-curso h3 {
+  color: #ccc;
+  margin: 0 0 10px 0;
+  font-size: 18px;
+}
+
+.info-curso p {
+  color: #999;
+  margin: 0 0 15px 0;
+  font-size: 14px;
+}
+
+.btn-precio {
+  background-color: #8B5CF6;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.btn-precio:hover {
+  background-color: #7C3AED;
+}
