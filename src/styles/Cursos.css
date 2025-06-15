@@ -1,0 +1,17 @@
+.cursos {
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.cursos h2 {
+  color: #ccc;
+  text-align: center;
+  margin-bottom: 30px;
+  font-size: 24px;
+}
+
+.lista-cursos {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
