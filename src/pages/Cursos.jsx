@@ -4,9 +4,9 @@ import Modal from "../components/Modal";
 import './Cursos.css';
 
 const cursos = [
-  { nombre: "Morenada", descripcion: "Curso completo sobre la danza Morenada.", imagen: "img/morenada.jpeg", precio: "Bs. 400" },
-  { nombre: "Diablada", descripcion: "Aprende la cueca tradicional.", imagen: "img/diablada.jpeg", precio: "Bs. 400" },
-  { nombre: "Taquirari", descripcion: "Curso de baile oriental Taquirari.", imagen: "img/taquirari.jpeg", precio: "Bs. 400" }
+  { nombre: "Morenada", descripcion: "Curso completo sobre la danza Morenada.", imagen: "src/pages/img/morenada.jpeg", precio: "Bs. 400" },
+  { nombre: "Diablada", descripcion: "Aprende la cueca tradicional.", imagen: "src/pages/img/diablada.jpeg", precio: "Bs. 400" },
+  { nombre: "Taquirari", descripcion: "Curso de baile oriental Taquirari.", imagen: "src/pages/img/taquirari.jpeg", precio: "Bs. 400" }
 ];
 
 export default function Cursos() {
